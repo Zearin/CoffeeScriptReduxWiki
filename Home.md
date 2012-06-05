@@ -1,0 +1,1 @@
+Welcome to the CoffeeScript2 wiki!
