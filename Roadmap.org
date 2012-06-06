@@ -1,0 +1,17 @@
+|expected completion|completion date|description|
+|-
+|Mon, 4 June|Mon, 4 June|define a reasonable subset of CoffeeScript|
+|Wed, 6 June|Wed, 6 June|design the intermediate data representations|
+|Thu, 7 June||choose a platform for building the bootstrapping compiler; haskell? jashkenas/coffee-script?|
+|Fri, 8 June||implement the AST constructors|
+|Mon, 11 June||choose a parsing strategy and library|
+|Fri, 15 June||skip the CS-to-JS conversion for now and work on a simple code generator for CS ASTs, cscodegen, named after the ECMAScript code generator that we will be using, escodegen|
+|Wed, 27 June||define a parser that can parse my subset of CoffeeScript and generate CoffeeScript code|
+|||start writing the transformations from CS ASTs to JS ASTs|
+|||enhance escodegen to accept a grammar for generating CSTs|
+|||use Mozilla's source map generator to generate source maps for us|
+|||self-host|
+|||expand the language and include all the features we initially left out|
+|||start using it to compile popular projects; see if they continue to pass their test suites|
+|||pass the current CS compiler's entire test suite|
+|||documentation|
