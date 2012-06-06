@@ -1,23 +1,23 @@
 |feature name|example|include?|AST?|
 |-
-|string interpolation|"a#{b}"|✓|
+|string interpolation|"a#{b}"|✓|✓|
 |assignment|a = b|✓|✓|
 |single-line comment|# comment|✓|N/A|
-|integer literal|1|✓|
-|decimal literal|1.1|✓|
+|integer literal|1|✓|✓|
+|decimal literal|1.1|✓|✓|
 |boolean literal|true/false|✓|✓|
 |parentheses for grouping|(a or b) and c|✓|N/A|
 |logical operators|and/or/not/&&/&#124;&#124;/!|✓|✓|
 |comparison operators|</<=/>/>=/==/!=/is/isnt|✓|✓|
 |member access|a.b|✓|✓|
 |dynamic member access|a[b]|✓|✓|
-|explicit function application|a(b, c)|✓|
-|indentation introduces blocks|if a <\n> <indent> b|✓|
-|`then` introduces block|if a then b|✓|
-|@-vars|@a|✓|
+|explicit function application|a(b, c)|✓|✓|
+|indentation introduces blocks|if a <\n> <indent> b|✓|N/A|
+|`then` introduces block|if a then b|✓|N/A|
+|@-vars|@a|✓|✓|
 |unary existential operator|a?|✓|✓|
-|conditional execution|if a then b|✓|
-|conditional else clause|if a then b else c|✓|
+|conditional execution|if a then b|✓|✓|
+|conditional else clause|if a then b else c|✓|✓|
 |negated flow control keywords|unless/until|✓|N/A|
 |in operator|a in b|✓|✓|
 |of operator|a of b|✓|✓|
@@ -28,8 +28,8 @@
 |filtered loops via when|for a in b when c then d|✓|
 |own keyword for hasOwnProperty filter|for own k of o then c|✓|
 |single-line function literals|(a, b) -> c|✓|
-|parameter-less functions|-> a|✓|
-|multi-line function literals|-> <\n> <indent> a|✓|
+|parameter-less functions|-> a|✓|✓|
+|multi-line function literals|-> <\n> <indent> a|✓|N/A|
 |maths operators|/, +, -, %, *|✓|✓|
 |array literals|[a, b]|✓|
 |explicit object literals|{a: b}|✓|
@@ -53,8 +53,8 @@
 |string line continuation|"<\n>a"|✓|
 |regex literals|/a/|✓|
 |do operator|do a|✓|✓|
-|slices|a[b..c]  a[b...c]|✓|
-|unbounded slices|a[b...]  a[..b]|✓|
+|slices|a[b..c]  a[b...c]|✓|✓|
+|unbounded slices|a[b...]  a[..b]|✓|✓|
 |undefined -> void 0|undefined|✓|✓|
 |null literal|null|✓|✓|
 |compound assignment|a <binary-op>= b|✗|✓|
@@ -76,11 +76,11 @@
 |bound function literals|=>|✗|
 |object key-omission shorthand|{a}|✗|
 |implicit object literals|a: b|✗|
-|(splat/rest)-params|(a...) ->|✗|
-|@-params|(@a) ->|✗|
+|(splat/rest)-params|(a...) ->|✗|✓|
+|@-params|(@a) ->|✗|✓|
 |named destructuring assignment|{a: b} = c|✗|
 |positional destructuring assignment|[a, b] = c|✗|
-|splat/spread arguments|fn a...|✗|
+|splat/spread arguments|fn a...|✗|✓|
 |chained comparison|a < b < c|✗|
 |super|super|✗|
 |super with arguments|super a|✗|
@@ -95,8 +95,8 @@
 |heregexen|/// a ///|✗|N/A|
 |ACI in multiline array/object literals|[a<\n>b]|✗|N/A|
 |shallow copy of array|a[..]|✗|
-|splices|a[b..c] = d|✗|
-|unbounded splices|a[b...] = c|✗|
+|splices|a[b..c] = d|✗|✓|
+|unbounded splices|a[b...] = c|✗|✓|
 |javascript literals|`javascript`|✗|
 |block comments|### comment ###|✗|
 |default parameters|(a = b) ->|✗|
