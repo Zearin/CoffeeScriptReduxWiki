@@ -1,1 +1,1 @@
-Welcome to the CoffeeScript2 wiki!
+https://github.com/michaelficarra/CoffeeScriptRedux/wiki/_pages
