@@ -23,10 +23,10 @@
 |of operator|a of b|✓|✓|
 |instanceof operator|a instanceof b|✓|✓|
 |negated infix operators|not in, not of, not instanceof|✓|N/A|
-|for-in|for v, k in a then e|✓|
-|for-of|for k, v of o then e|✓|
-|filtered loops via when|for a in b when c then d|✓|
-|own keyword for hasOwnProperty filter|for own k of o then c|✓|
+|for-in|for v, k in a then e|✓|✓|
+|for-of|for k, v of o then e|✓|✓|
+|filtered loops via when|for a in b when c then d|✓|✓|
+|own keyword for hasOwnProperty filter|for own k of o then c|✓|✓|
 |single-line function literals|(a, b) -> c|✓|✓|
 |parameter-less functions|-> a|✓|✓|
 |multi-line function literals|-> <\n> <indent> a|✓|N/A|
@@ -43,7 +43,7 @@
 |class proto-assignments|class A then m: ->|✓|✓|
 |extends operator|A extends B|✓|✓|
 |switch-when-else|switch a <\n> when b then c|✓|✓|
-|try-catch| |✓|
+|try-catch| |✓|✓|
 |throw|throw a|✓|✓|
 |new operator|new A|✓|✓|
 |semicolons as seq operator|a; b|✓|✓|
@@ -74,7 +74,7 @@
 |inclusive ranges|[a..b]|✗|✓|
 |exclusive ranges|[a...b]|✗|✓|
 |bound function literals|=>|✗|✓|
-|object key-omission shorthand|{a}|✗|
+|object key-omission shorthand|{a}|✗|✓|
 |implicit object literals|a: b|✗|N/A|
 |(splat/rest)-params|(a...) ->|✗|✓|
 |@-params|(@a) ->|✗|✓|
@@ -84,17 +84,17 @@
 |chained comparison|a < b < c|✗|
 |super|super|✗|✓|
 |super with arguments|super a|✗|✓|
-|external constructors|class A then constructor: c|✗|
-|try-catch-finally| |✗|
-|try-finally| |✗|
-|try|try a|✗|
+|external constructors|class A then constructor: c|✗|N/A|
+|try-catch-finally| |✗|✓|
+|try-finally| |✗|✓|
+|try|try a|✗|✓|
 |typeof operator|typeof a|✗|✓|
 |continue lines ending in binary operator|a and <\n> b|✗|N/A|
 |backslash continues lines|a \ <\n> + b|✗|N/A|
 |triple-quoted strings|“””<\n>   a<\n>”””|✗|N/A|
 |heregexen|/// a ///|✗|N/A|
 |ACI in multiline array/object literals|[a<\n>b]|✗|N/A|
-|shallow copy of array|a[..]|✗|
+|shallow copy of array|a[..]|✗|✓|
 |splices|a[b..c] = d|✗|✓|
 |unbounded splices|a[b...] = c|✗|✓|
 |javascript literals|`javascript`|✗|
