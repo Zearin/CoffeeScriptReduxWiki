@@ -1,3 +1,4 @@
+* Program :: Block -> Program
 * Block :: [Statement] -> Block
 * Continue :: Continue
 * Break :: Break
@@ -83,7 +84,7 @@
 * Class :: Maybe Assignable -> Maybe Exprs -> [Exprs] -> Class
 * Try :: Block -> Maybe Assignable -> Maybe Block -> Maybe Block -> Try
 * JavaScript :: string -> JavaScript
-* ForIn :: bool -> Assignable -> Maybe Assignable -> Exprs -> Exprs -> Block -> ForIn
+* ForIn :: Assignable -> Maybe Assignable -> Exprs -> Exprs -> Block -> ForIn
 * ForOf :: bool -> Assignable -> Maybe Assignable -> Exprs -> Exprs -> Block -> ForOf
 * Splat :: Exprs -> Splat
 
