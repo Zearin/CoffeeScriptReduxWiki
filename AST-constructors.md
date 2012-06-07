@@ -63,19 +63,10 @@
 * SoakedProtoMemberAccessOp :: Exprs -> MemberNames -> SoakedProtoMemberAccessOp
 * SoakedDynamicProtoMemberAccessOp :: Exprs -> Exprs -> SoakedDynamicProtoMemberAccessOp
 * AssignOp :: Assignables -> Exprs -> AssignOp
-* ExistsAssignOp :: Assignables -> Exprs -> ExistsAssignOp
 * Splice :: Slices -> Exprs -> Splice
 * ClassProtoAssignOp :: MemberNames -> Exprs -> ClassProtoAssignOp
-* CompoundAssignAddOp :: Assignables -> Exprs -> CompoundAssignAddOp
-* CompoundAssignSubtractOp :: Assignables -> Exprs -> CompoundAssignSubtractOp
-* CompoundAssignMultiplyOp :: Assignables -> Exprs -> CompoundAssignMultiplyOp
-* CompoundAssignDivideOp :: Assignables -> Exprs -> CompoundAssignDivideOp
-* CompoundAssignRemOp :: Assignables -> Exprs -> CompoundAssignRemOp
-* CompoundAssignBitAndOp :: Assignables -> Exprs -> CompoundAssignBitAndOp
-* CompoundAssignBitOrOp :: Assignables -> Exprs -> CompoundAssignBitOrOp
-* CompoundAssignBitXorOp :: Assignables -> Exprs -> CompoundAssignBitXorOp
-* CompoundAssignAndOp :: Assignables -> Exprs -> CompoundAssignAndOp
-* CompoundAssignOrOp :: Assignables -> Exprs -> CompoundAssignOrOp
+* ExistsAssignOp :: Assignables -> Exprs -> ExistsAssignOp
+* CompoundAssignOp :: CompoundAssignableOps -> Assignables -> Exprs -> CompoundAssignOp
 * FunctionApplication :: Exprs -> [Arguments] -> FunctionApplication
 * SoakedFunctionApplication :: Exprs -> [Arguments] -> SoakedFunctionApplication
 * Function :: [Parameters] -> Block -> Function
@@ -159,7 +150,7 @@
 
 @ BinOps
   * ConcatOp
-  * BoolOps
+  * LogicOps
   * BitOps
   * MathsOps
   * ExistsOp
@@ -172,7 +163,7 @@
   * MemberAccessOps
   * AssignOps
 
-@ BoolOps
+@ LogicOps
   * AndOp
   * OrOp
 
@@ -214,19 +205,12 @@
   * ExistsAssignOp
   * Splice
   * ClassProtoAssignOp
-  * CompoundAssignOps
+  * CompoundAssignOp
 
-@ CompoundAssignOps
-  * CompoundAssignAddOp
-  * CompoundAssignSubtractOp
-  * CompoundAssignMultiplyOp
-  * CompoundAssignDivideOp
-  * CompoundAssignRemOp
-  * CompoundAssignBitAndOp
-  * CompoundAssignBitOrOp
-  * CompoundAssignBitXorOp
-  * CompoundAssignAndOp
-  * CompoundAssignOrOp
+@ CompoundAssignableOps
+  * MathsOps
+  * BitOps
+  * LogicOps
 
 @ ObjectInitialiserKeys
   * IdentifierName
