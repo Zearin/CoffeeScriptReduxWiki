@@ -231,7 +231,7 @@
   * Rest
 
 @ Assignables
-  * IdentifierName
+  * Identifier
   * MemberAccessOps
   * PositionalDestructuring # TODO
   * NamedDestructuring # TODO
