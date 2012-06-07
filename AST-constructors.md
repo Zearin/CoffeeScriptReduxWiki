@@ -9,7 +9,6 @@
 * Undefined :: Undefined
 * Null :: Null
 * Bool :: bool -> Bool
-* ContextMember :: MemberNames -> ContextMember
 * UnaryPlusOp :: Exprs -> UnaryPlusOp
 * UnaryNegateOp :: Exprs -> UnaryNegateOp
 * NotOp :: Exprs -> NotOp
