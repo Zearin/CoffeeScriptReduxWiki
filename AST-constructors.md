@@ -27,7 +27,6 @@
 * UnboundedLeftSlice :: Exprs -> Exprs -> UnboundedLeftSlice
 * UnboundedRightSlice :: Exprs -> Exprs -> UnboundedRightSlice
 * ShallowCopyArray :: Exprs -> ShallowCopyArray
--- a tree of ConcatOp represents interpolation
 * ConcatOp :: Exprs -> Exprs -> ConcatOp
 * AndOp :: Exprs -> Exprs -> AndOp
 * OrOp :: Exprs -> Exprs -> OrOp
@@ -60,7 +59,6 @@
 * SoakedDynamicMemberAccessOp :: Exprs -> Exprs -> SoakedDynamicMemberAccessOp
 * ProtoMemberAccessOp :: Exprs -> MemberNames -> ProtoMemberAccessOp
 * DynamicProtoMemberAccessOp :: Exprs -> Exprs -> DynamicProtoMemberAccessOp
--- we don't support these, but we should
 * SoakedProtoMemberAccessOp :: Exprs -> MemberNames -> SoakedProtoMemberAccessOp
 * SoakedDynamicProtoMemberAccessOp :: Exprs -> Exprs -> SoakedDynamicProtoMemberAccessOp
 * AssignOp :: Assignables -> Exprs -> AssignOp
@@ -72,21 +70,22 @@
 * SoakedFunctionApplication :: Exprs -> [Arguments] -> SoakedFunctionApplication
 * Function :: [Parameters] -> Block -> Function
 * BoundFunction :: [Parameters] -> Block -> BoundFunction
-* Conditional :: Exprs -> Block -> Block -> Conditional
+* Conditional :: Exprs -> Block -> Maybe Block -> Conditional
 * While :: Exprs -> Block -> While
 * InclusiveRange :: Exprs -> Exprs -> InclusiveRange
 * ExclusiveRange :: Exprs -> Exprs -> ExclusiveRange
-* Switch :: Exprs -> [(Exprs, Block)] -> Block -> Switch
+* Switch :: Exprs -> [(Exprs, Block)] -> Maybe Block -> Switch
 * Regexp :: string -> Regexp
 * Super :: [Arguments] -> Super
-* ArrayInitialiser :: [Exprs] -> ArrayInitialiser
+* ArrayInitialiser :: [ArrayInitialiserMembers] -> ArrayInitialiser
 * ObjectInitialiser :: [(ObjectInitialiserKeys, Exprs)] -> ObjectInitialiser
 * Class :: Maybe Assignable -> Maybe Exprs -> [Exprs] -> Class
 * Try :: Block -> Maybe Assignable -> Maybe Block -> Maybe Block -> Try
 * JavaScript :: string -> JavaScript
 * ForIn :: Assignable -> Maybe Assignable -> Exprs -> Exprs -> Block -> ForIn
 * ForOf :: bool -> Assignable -> Maybe Assignable -> Exprs -> Exprs -> Block -> ForOf
-* Splat :: Exprs -> Splat
+* Spread :: Exprs -> Spread
+* Rest :: Exprs -> Rest
 
 
 @ Statements
@@ -213,6 +212,10 @@
   * BitOps
   * LogicOps
 
+@ ArrayInitialiserMembers
+  * Exprs
+  * Spread
+
 @ ObjectInitialiserKeys
   * IdentifierName
   * String
@@ -220,12 +223,12 @@
 
 @ Arguments
   * Exprs
-  * Splat
+  * Spread
 
 @ Parameters
   * Assignables
   * AssignOp
-  * Splat
+  * Rest
 
 @ Assignables
   * IdentifierName
