@@ -1,93 +1,3 @@
-* Program :: Block -> Program
-* Block :: [Statement] -> Block
-* Continue :: Continue
-* Break :: Break
-* Throw :: Exprs -> Throw
-* Return :: Exprs -> Return
-* Int :: float -> Int
-* Float :: float -> Float
-* String :: string -> String
-* Undefined :: Undefined
-* Null :: Null
-* Bool :: bool -> Bool
-* UnaryPlusOp :: Exprs -> UnaryPlusOp
-* UnaryNegateOp :: Exprs -> UnaryNegateOp
-* NotOp :: Exprs -> NotOp
-* BitNotOp :: Exprs -> BitNotOp
-* UnaryExistsOp :: Exprs -> UnaryExistsOp
-* DoOp :: Exprs -> DoOp
-* NewOp :: Exprs -> NewOp
-* TypeofOp :: Exprs -> TypeofOp
-* IncrementOp :: Exprs -> IncrementOp
-* DecrementOp :: Exprs -> DecrementOp
-* PostIncrementOp :: Exprs -> PostIncrementOp
-* PostDecrementOp :: Exprs -> PostDecrementOp
-* InclusiveSlice :: Exprs -> Exprs -> Exprs -> InclusiveSlice
-* ExclusiveSlice :: Exprs -> Exprs -> Exprs -> ExclusiveSlice
-* UnboundedLeftSlice :: Exprs -> Exprs -> UnboundedLeftSlice
-* UnboundedRightSlice :: Exprs -> Exprs -> UnboundedRightSlice
-* ShallowCopyArray :: Exprs -> ShallowCopyArray
-* ConcatOp :: Exprs -> Exprs -> ConcatOp
-* AndOp :: Exprs -> Exprs -> AndOp
-* OrOp :: Exprs -> Exprs -> OrOp
-* BitAndOp :: Exprs -> Exprs -> BitAndOp
-* BitOrOp :: Exprs -> Exprs -> BitOrOp
-* BitXorOp :: Exprs -> Exprs -> BitXorOp
-* LeftShiftOp :: Exprs -> Exprs -> LeftShiftOp
-* SignedRightShiftOp :: Exprs -> Exprs -> SignedRightShiftOp
-* UnsignedRightShiftOp :: Exprs -> Exprs -> UnsignedRightShiftOp
-* AddOp :: Exprs -> Exprs -> AddOp
-* SubtractOp :: Exprs -> Exprs -> SubtractOp
-* MultiplyOp :: Exprs -> Exprs -> MultiplyOp
-* DivideOp :: Exprs -> Exprs -> DivideOp
-* RemOp :: Exprs -> Exprs -> RemOp
-* ExistsOp :: Exprs -> Exprs -> ExistsOp
-* LTOp :: Exprs -> Exprs -> LTOp
-* LTEOp :: Exprs -> Exprs -> LTEOp
-* GTOp :: Exprs -> Exprs -> GTOp
-* GTEOp :: Exprs -> Exprs -> GTEOp
-* EQOp :: Exprs -> Exprs -> EQOp
-* NEQOp :: Exprs -> Exprs -> NEQOp
-* InOp :: Exprs -> Exprs -> InOp
-* OfOp :: Exprs -> Exprs -> OfOp
-* InstanceofOp :: Exprs -> Exprs -> InstanceofOp
-* SeqOp :: Exprs -> Exprs -> SeqOp
-* ExtendsOp :: Exprs -> Exprs -> ExtendsOp
-* MemberAccessOp :: Exprs -> MemberNames -> MemberAccessOp
-* SoakedMemberAccessOp :: Exprs -> MemberNames -> SoakedMemberAccessOp
-* DynamicMemberAccessOp :: Exprs -> Exprs -> DynamicMemberAccessOp
-* SoakedDynamicMemberAccessOp :: Exprs -> Exprs -> SoakedDynamicMemberAccessOp
-* ProtoMemberAccessOp :: Exprs -> MemberNames -> ProtoMemberAccessOp
-* DynamicProtoMemberAccessOp :: Exprs -> Exprs -> DynamicProtoMemberAccessOp
-* SoakedProtoMemberAccessOp :: Exprs -> MemberNames -> SoakedProtoMemberAccessOp
-* SoakedDynamicProtoMemberAccessOp :: Exprs -> Exprs -> SoakedDynamicProtoMemberAccessOp
-* AssignOp :: Assignables -> Exprs -> AssignOp
-* Splice :: Slices -> Exprs -> Splice
-* ClassProtoAssignOp :: MemberNames -> Exprs -> ClassProtoAssignOp
-* ExistsAssignOp :: Assignables -> Exprs -> ExistsAssignOp
-* CompoundAssignOp :: CompoundAssignableOps -> Assignables -> Exprs -> CompoundAssignOp
-* FunctionApplication :: Exprs -> [Arguments] -> FunctionApplication
-* SoakedFunctionApplication :: Exprs -> [Arguments] -> SoakedFunctionApplication
-* Function :: [Parameters] -> Block -> Function
-* BoundFunction :: [Parameters] -> Block -> BoundFunction
-* Conditional :: Exprs -> Block -> Maybe Block -> Conditional
-* While :: Exprs -> Block -> While
-* InclusiveRange :: Exprs -> Exprs -> InclusiveRange
-* ExclusiveRange :: Exprs -> Exprs -> ExclusiveRange
-* Switch :: Exprs -> [(Exprs, Block)] -> Maybe Block -> Switch
-* Regexp :: string -> Regexp
-* Super :: [Arguments] -> Super
-* ArrayInitialiser :: [ArrayInitialiserMembers] -> ArrayInitialiser
-* ObjectInitialiser :: [(ObjectInitialiserKeys, Exprs)] -> ObjectInitialiser
-* Class :: Maybe Assignable -> Maybe Exprs -> [Exprs] -> Class
-* Try :: Block -> Maybe Assignable -> Maybe Block -> Maybe Block -> Try
-* JavaScript :: string -> JavaScript
-* ForIn :: Assignable -> Maybe Assignable -> Exprs -> Exprs -> Block -> ForIn
-* ForOf :: bool -> Assignable -> Maybe Assignable -> Exprs -> Exprs -> Block -> ForOf
-* Spread :: Exprs -> Spread
-* Rest :: Exprs -> Rest
-
-
 @ Statements
   * Continue
   * Break
@@ -123,6 +33,7 @@
   * JavaScript
   * ForIn
   * ForOf
+  * Identifier
 
 @ Numbers
   * Int
@@ -137,10 +48,11 @@
   * DoOp
   * NewOp
   * TypeofOp
-  * IncrementOp
-  * DecrementOp
+  * PreIncrementOp
+  * PreDecrementOp
   * PostIncrementOp
   * PostDecrementOp
+  * ShallowCopyArray
 
 @ Slices
   * InclusiveSlice
