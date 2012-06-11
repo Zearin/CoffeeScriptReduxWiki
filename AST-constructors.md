@@ -123,6 +123,7 @@
   * MathsOps
   * BitOps
   * LogicOps
+  * ExistsOp
 
 @ ArrayInitialiserMembers
   * Exprs
