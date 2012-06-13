@@ -4,9 +4,9 @@
 |Wed, 6 June|Wed, 6 June|design the intermediate data representations|
 |Thu, 7 June|Fri, 8 June|choose a platform for building the bootstrapping compiler; haskell? jashkenas/coffee-script?|
 |Fri, 8 June|Fri, 8 June|implement the AST constructors|
-|Mon, 11 June||choose a parsing strategy and library|
-|Fri, 15 June|in progress|skip the CS-to-JS conversion for now and work on a simple code generator for CS ASTs, cscodegen, named after the ECMAScript code generator that we will be using, escodegen|
-|Wed, 27 June||define a parser that can parse my subset of CoffeeScript and generate CoffeeScript code|
+|Mon, 11 June|Mon, 11 June|choose a parsing strategy and library|
+|Wed, 27 June|in progress|define a parser that can parse my subset of CoffeeScript and generate CoffeeScript code|
+|Thu, 28 June|in progress|skip the CS-to-JS conversion for now and work on a simple code generator for CS ASTs, cscodegen, named after the ECMAScript code generator that we will be using, escodegen|
 |||start writing the transformations from CS ASTs to JS ASTs|
 |||enhance escodegen to accept a grammar for generating CSTs|
 |||use Mozilla's source map generator to generate source maps for us|
