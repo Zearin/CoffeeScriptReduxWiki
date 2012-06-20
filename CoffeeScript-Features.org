@@ -11,7 +11,7 @@
 |comparison operators|</<=/>/>=/==/!=/is/isnt|✓|✓|✓|
 |member access|a.b|✓|✓|✓|
 |dynamic member access|a[b]|✓|✓|✓|
-|explicit function application|a(b, c)|✓|✓|
+|explicit function application|a(b, c)|✓|✓|✓|
 |indentation introduces blocks|if a <\n> <indent> b|✓|N/A|
 |`then` introduces block|if a then b|✓|N/A|✓|
 |@-vars|@a|✓|✓|✓|
@@ -38,9 +38,9 @@
 |explicit return|return 0|✓|✓|✓|
 |unconditional loop|loop then a|✓|✓|
 |break/continue|loop then break|✓|✓|✓|
-|classes|class A|✓|✓|
-|class-extends|class A extends B|✓|✓|
-|class proto-assignments|class A then m: ->|✓|✓|
+|classes|class A|✓|✓|✓|
+|class-extends|class A extends B|✓|✓|✓|
+|class proto-assignments|class A then m: ->|✓|✓|✓|
 |extends operator|A extends B|✓|✓|
 |switch-when-else|switch a <\n> when b then c|✓|✓|
 |try-catch| |✓|✓|
@@ -55,11 +55,11 @@
 |do operator|do a|✓|✓|✓|
 |slices|a[b..c]  a[b...c]|✓|✓|
 |unbounded slices|a[b...]  a[..b]|✓|✓|
-|undefined -> void 0|undefined|✓|✓|
-|null literal|null|✓|✓|
+|undefined -> void 0|undefined|✓|✓|✓|
+|null literal|null|✓|✓|✓|
 |compound assignment|a <binary-op>= b|✗|✓|✓|
 |boolean aliases|yes/no/on/off|✗|N/A|✓|
-|exponential notation|1.2e+4|✗|N/A|
+|exponential notation|1.2e+4|✗|N/A|✓|
 |bitwise operators|&/&#124;/^/~/<</>>/>>>|✗|✓|✓|
 |soaked member access|a?.b|✗|✓|✓|
 |dynamic soaked member access|a?[b]|✗|✓|✓|
@@ -84,7 +84,7 @@
 |chained comparison|a < b < c|✗|
 |super|super|✗|✓|
 |super with arguments|super a|✗|✓|
-|external constructors|class A then constructor: c|✗|N/A|
+|external constructors|class A then constructor: c|✗|N/A|✓|
 |try-catch-finally| |✗|✓|
 |try-finally| |✗|✓|
 |try|try a|✗|✓|
