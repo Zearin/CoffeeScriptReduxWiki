@@ -23,10 +23,10 @@
 |of operator|a of b|✓|✓|✓|
 |instanceof operator|a instanceof b|✓|✓|✓|
 |negated infix operators|not in, not of, not instanceof|✓|N/A|✓|
-|for-in|for v, k in a then e|✓|✓|
-|for-of|for k, v of o then e|✓|✓|
-|filtered loops via when|for a in b when c then d|✓|✓|
-|own keyword for hasOwnProperty filter|for own k of o then c|✓|✓|
+|for-in|for v, k in a then e|✓|✓|✓|
+|for-of|for k, v of o then e|✓|✓|✓|
+|filtered loops via when|for a in b when c then d|✓|✓|✓|
+|own keyword for hasOwnProperty filter|for own k of o then c|✓|✓|✓|
 |single-line function literals|(a, b) -> c|✓|✓|✓|
 |parameter-less functions|-> a|✓|✓|✓|
 |multi-line function literals|-> <\n> <indent> a|✓|N/A|✓|
