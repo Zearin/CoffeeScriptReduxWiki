@@ -36,12 +36,12 @@
 |{pre,post}fix {in,de}crement|--a, a--, ++a, a++|✓|✓|✓|
 |unary +/-|+a, -a|✓|✓|✓|
 |explicit return|return 0|✓|✓|✓|
-|unconditional loop|loop then a|✓|✓|
+|unconditional loop|loop then a|✓|✓|✓|
 |break/continue|loop then break|✓|✓|✓|
 |classes|class A|✓|✓|✓|
 |class-extends|class A extends B|✓|✓|✓|
 |class proto-assignments|class A then m: ->|✓|✓|✓|
-|extends operator|A extends B|✓|✓|
+|extends operator|A extends B|✓|✓|✓|
 |switch-when-else|switch a <\n> when b then c|✓|✓|
 |try-catch| |✓|✓|
 |throw|throw a|✓|✓|✓|
@@ -51,7 +51,7 @@
 |string hex escapes|"\x61"|✓|N/A|✓|
 |string character escapes|"\n"|✓|N/A|✓|
 |string line continuation|"<\n>a"|✓|N/A|✓|
-|regex literals|/a/|✓|✓|
+|regex literals|/a/|✓|✓|✓|
 |do operator|do a|✓|✓|✓|
 |slices|a[b..c]  a[b...c]|✓|✓|
 |unbounded slices|a[b...]  a[..b]|✓|✓|
