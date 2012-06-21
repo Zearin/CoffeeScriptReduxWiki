@@ -1,6 +1,6 @@
 |feature name|example|include?|AST?|parse|
 |-
-|string interpolation|"a#{b}"|✓|✓|
+|string interpolation|"a#{b}"|✓|✓|✓|
 |assignment|a = b|✓|✓|✓|
 |single-line comment|# comment|✓|N/A|✓|
 |integer literal|1|✓|✓|✓|
@@ -31,7 +31,7 @@
 |parameter-less functions|-> a|✓|✓|✓|
 |multi-line function literals|-> <\n> <indent> a|✓|N/A|✓|
 |maths operators|/, +, -, %, *|✓|✓|✓|
-|array literals|[a, b]|✓|✓|
+|array literals|[a, b]|✓|✓|✓|
 |explicit object literals|{a: b}|✓|✓|
 |{pre,post}fix {in,de}crement|--a, a--, ++a, a++|✓|✓|✓|
 |unary +/-|+a, -a|✓|✓|✓|
@@ -47,10 +47,10 @@
 |throw|throw a|✓|✓|✓|
 |new operator|new A|✓|✓|✓|
 |semicolons as seq operator|a; b|✓|✓|✓|
-|string literals|"a"|✓|✓|
-|string hex escapes|"\x61"|✓|N/A|
-|string character escapes|"\n"|✓|N/A|
-|string line continuation|"<\n>a"|✓|N/A|
+|string literals|"a"|✓|✓|✓|
+|string hex escapes|"\x61"|✓|N/A|✓|
+|string character escapes|"\n"|✓|N/A|✓|
+|string line continuation|"<\n>a"|✓|N/A|✓|
 |regex literals|/a/|✓|✓|
 |do operator|do a|✓|✓|✓|
 |slices|a[b..c]  a[b...c]|✓|✓|
@@ -64,7 +64,7 @@
 |soaked member access|a?.b|✗|✓|✓|
 |dynamic soaked member access|a?[b]|✗|✓|✓|
 |binary existential operator|a ? b|✗|✓|✓|
-|implicit function application|a b, c|✗|N/A|
+|implicit function application|a b, c|✗|N/A|✓|
 |proto-member access|a::b|✗|✓|✓|
 |dynamic proto-member access|a::[b]|✗|✓|✓|
 |@ as alias for this|@|✗|N/A|✓|
