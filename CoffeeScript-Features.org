@@ -42,7 +42,7 @@
 |class-extends|class A extends B|✓|✓|✓|
 |class proto-assignments|class A then m: ->|✓|✓|✓|
 |extends operator|A extends B|✓|✓|✓|
-|switch-when-else|switch a <\n> when b then c|✓|✓|
+|switch-when-else|switch a <\n> when b then c|✓|✓|✓|
 |try-catch| |✓|✓|
 |throw|throw a|✓|✓|✓|
 |new operator|new A|✓|✓|✓|
@@ -78,8 +78,8 @@
 |implicit object literals|a: b|✗|N/A|
 |(splat/rest)-params|(a...) ->|✗|✓|
 |@-params|(@a) ->|✗|✓|✓|
-|named destructuring assignment|{a: b} = c|✗|
-|positional destructuring assignment|[a, b] = c|✗|
+|named destructuring assignment|{a: b} = c|✗|✓|✓|
+|positional destructuring assignment|[a, b] = c|✗|✓|✓|
 |splat/spread arguments|fn a...|✗|✓|
 |chained comparison|a < b < c|✗|
 |super|super|✗|✓|
@@ -92,8 +92,8 @@
 |continue lines ending in binary operator|a and <\n> b|✗|N/A|
 |backslash continues lines|a \ <\n> + b|✗|N/A|✓|
 |triple-quoted strings|"""<\n>   a<\n>"""|✗|N/A|
-|heregexen|/// a ///|✗|N/A|
-|ACI in multiline array/object literals|[a<\n>b]|✗|N/A|
+|heregexen|/// a ///|✗|N/A|✓|
+|ACI in multiline array/object literals|[a<\n>b]|✗|N/A|✓|
 |shallow copy of array|a[..]|✗|✓|✓|
 |splices|a[b..c] = d|✗|✓|
 |unbounded splices|a[b...] = c|✗|✓|
