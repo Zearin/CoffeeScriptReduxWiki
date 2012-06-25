@@ -43,7 +43,6 @@
 |class proto-assignments|class A then m: ->|✓|✓|✓|
 |extends operator|A extends B|✓|✓|✓|
 |switch-when-else|switch a <\n> when b then c|✓|✓|✓|
-|try-catch| |✓|✓|
 |throw|throw a|✓|✓|✓|
 |new operator|new A|✓|✓|✓|
 |semicolons as seq operator|a; b|✓|✓|✓|
@@ -53,8 +52,8 @@
 |string line continuation|"<\n>a"|✓|N/A|✓|
 |regex literals|/a/|✓|✓|✓|
 |do operator|do a|✓|✓|✓|
-|slices|a[b..c]  a[b...c]|✓|✓|
-|unbounded slices|a[b...]  a[..b]|✓|✓|
+|slices|a[b..c]  a[b...c]|✓|✓|✓|
+|unbounded slices|a[b...]  a[..b]|✓|✓|✓|
 |undefined -> void 0|undefined|✓|✓|✓|
 |null literal|null|✓|✓|✓|
 |compound assignment|a <binary-op>= b|✗|✓|✓|
@@ -74,7 +73,7 @@
 |inclusive ranges|[a..b]|✗|✓|
 |exclusive ranges|[a...b]|✗|✓|
 |bound function literals|=>|✗|✓|✓|
-|object key-omission shorthand|{a}|✗|✓|
+|object key-omission shorthand|{a}|✗|✓|✓|
 |implicit object literals|a: b|✗|N/A|
 |(splat/rest)-params|(a...) ->|✗|✓|
 |@-params|(@a) ->|✗|✓|✓|
@@ -86,17 +85,16 @@
 |super with arguments|super a|✗|✓|
 |external constructors|class A then constructor: c|✗|N/A|✓|
 |try-catch-finally| |✗|✓|
-|try-finally| |✗|✓|
-|try|try a|✗|✓|
+|try operator|try a|✗|✓|
 |typeof operator|typeof a|✗|✓|✓|
 |continue lines ending in binary operator|a and <\n> b|✗|N/A|
 |backslash continues lines|a \ <\n> + b|✗|N/A|✓|
-|triple-quoted strings|"""<\n>   a<\n>"""|✗|N/A|
+|triple-quoted strings|"""<\n>   a<\n>"""|✗|N/A|✓|
 |heregexen|/// a ///|✗|N/A|✓|
 |ACI in multiline array/object literals|[a<\n>b]|✗|N/A|✓|
 |shallow copy of array|a[..]|✗|✓|✓|
-|splices|a[b..c] = d|✗|✓|
-|unbounded splices|a[b...] = c|✗|✓|
+|splices|a[b..c] = d|✗|✓|✓|
+|unbounded splices|a[b...] = c|✗|✓|✓|
 |javascript literals|`javascript`|✗|
 |block comments|### comment ###|✗|
 |default parameters|(a = b) ->|✗|
