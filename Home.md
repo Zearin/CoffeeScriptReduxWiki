@@ -1,1 +1,1 @@
-## See [Pages](_pages)
+## See [Pages](wiki/_pages)
