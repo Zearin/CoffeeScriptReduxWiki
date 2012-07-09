@@ -6,13 +6,14 @@
 |Fri, 8 June|Fri, 8 June|implement the AST constructors|
 |Mon, 11 June|Mon, 11 June|choose a parsing strategy and library|
 |Wed, 27 June|Mon, 25 June|define a parser that can parse my subset of CoffeeScript|
-|Thu, 28 June|in progress|a simple code generator for CS ASTs, cscodegen, named after the ECMAScript code generator that we will be using, escodegen|
-|||define a semantic-only AST to which the optimiser can reduce the initial AST|
-|||start writing the optimising transformations|
-|||start writing the transformations from CS ASTs to JS ASTs|
-|||enhance escodegen to accept a grammar for generating CSTs|
-|||use Mozilla's source map generator to generate source maps for us|
+|Thu, 28 June|on hold|a simple code generator for CS ASTs, cscodegen|
+|Fri, 6 July|Fri, 6 July|start writing the optimising transformations|
+|Wed, 11 July|Mon, 9 July|get the optimiser working|
+||in progress|start writing the transformations from CS ASTs to JS ASTs|
+|||use Mozilla's source map generator to generate source maps|
+|||finish writing the transformations from CS ASTs to JS ASTs|
 |||self-host|
+|||enhance escodegen to accept a grammar for generating CSTs|
 |||expand the language and include all the features we initially left out|
 |||start using it to compile popular projects; see if they continue to pass their test suites|
 |||pass the current CS compiler's entire test suite|
