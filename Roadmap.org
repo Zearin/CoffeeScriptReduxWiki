@@ -9,7 +9,7 @@
 |Thu, 28 June|on hold|a simple code generator for CS ASTs, cscodegen|
 |Fri, 6 July|Fri, 6 July|start writing the optimising transformations|
 |Wed, 11 July|Mon, 9 July|get the optimiser working|
-||in progress|start writing the transformations from CS ASTs to JS ASTs|
+|Fri, 3 August|in progress|start writing the transformations from CS ASTs to JS ASTs|
 |||use Mozilla's source map generator to generate source maps|
 |||finish writing the transformations from CS ASTs to JS ASTs|
 |||self-host|
