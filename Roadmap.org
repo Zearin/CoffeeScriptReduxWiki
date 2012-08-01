@@ -12,6 +12,7 @@
 |Fri, 3 August|in progress|start writing the transformations from CS ASTs to JS ASTs|
 |||start pulling in the test suite from jashkenas/coffee-script|
 |||use Mozilla's source map generator to generate source maps|
+|||finish up cscodegen|
 |||finish writing the transformations from CS ASTs to JS ASTs|
 |||self-host|
 |||enhance escodegen to accept a grammar for generating CSTs|
