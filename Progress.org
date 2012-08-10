@@ -52,8 +52,8 @@
 |string line continuation|"<\n>a"|✓|N/A|✓|✓||
 |regex literals|/a/|✓|✓|✓|✓||
 |do operator|do a|✓|✓|✓|✓||
-|slices|a[b..c]  a[b...c]|✓|✓|✓|||
-|unbounded slices|a[b...]  a[..b]|✓|✓|✓|||
+|slices|a[b..c]  a[b...c]|✓|✓|✓|✓|✓|
+|unbounded slices|a[b...]  a[..b]|✓|✓|✓|✓|✓|
 |undefined -> void 0|undefined|✓|✓|✓|✓||
 |null literal|null|✓|✓|✓|✓||
 |compound assignment|a <binary-op>= b|✗|✓|✓|✓||
