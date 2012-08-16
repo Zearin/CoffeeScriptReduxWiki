@@ -2,7 +2,7 @@
 |-
 |string interpolation|"a#{b}"|✓|✓|✓|✓|✓|
 |assignment|a = b|✓|✓|✓|✓|✓|
-|single-line comment|# comment|✓|N/A|✓|N/A|N/A
+|single-line comment|# comment|✓|N/A|✓|N/A||
 |integer literal|1|✓|✓|✓|✓||
 |decimal literal|1.1|✓|✓|✓|✓||
 |boolean literal|true/false|✓|✓|✓|✓|✓|
@@ -38,9 +38,9 @@
 |explicit return|return 0|✓|✓|✓|✓||
 |unconditional loop|loop then a|✓|✓|✓|N/A||
 |break/continue|loop then break|✓|✓|✓|✓||
-|classes|class A|✓|✓|✓|✓||
-|class-extends|class A extends B|✓|✓|✓|✓||
-|class proto-assignments|class A then m: ->|✓|✓|✓|✓||
+|classes|class A|✓|✓|✓|✓|✓|
+|class-extends|class A extends B|✓|✓|✓|✓|✓|
+|class proto-assignments|class A then m: ->|✓|✓|✓|✓|✓|
 |extends operator|A extends B|✓|✓|✓|✓||
 |switch-when-else|switch a <\n> when b then c|✓|✓|✓|✓||
 |throw|throw a|✓|✓|✓|✓||
@@ -83,7 +83,7 @@
 |chained comparison|a < b < c|✗|||||
 |super|super|✗|✓||||
 |super with arguments|super a|✗|✓||||
-|external constructors|class A then constructor: c|✗|N/A|✓|||
+|external constructors|class A then constructor: c|✗|N/A|✓|✓|✓|
 |try-catch-finally| |✗|✓||||
 |try operator|try a|✗|✓||||
 |typeof operator|typeof a|✗|✓|✓|✓||
