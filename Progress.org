@@ -27,9 +27,9 @@
 |for-of|for k, v of o then e|✓|✓|✓|✓||
 |filtered loops via when|for a in b when c then d|✓|✓|✓|✓||
 |own keyword for hasOwnProperty filter|for own k of o then c|✓|✓|✓|✓||
-|single-line function literals|(a, b) -> c|✓|✓|✓|N/A||
-|parameter-less functions|-> a|✓|✓|✓|N/A||
-|multi-line function literals|-> <\n> <indent> a|✓|N/A|✓|N/A||
+|single-line function literals|(a, b) -> c|✓|✓|✓|N/A|✓|
+|parameter-less functions|-> a|✓|✓|✓|N/A|✓|
+|multi-line function literals|-> <\n> <indent> a|✓|N/A|✓|N/A|✓|
 |maths operators|/, +, -, %, *|✓|✓|✓|✓||
 |array literals|[a, b]|✓|✓|mostly|✓|mostly|
 |explicit object literals|{a: b}|✓|✓|mostly|✓|mostly|
@@ -72,11 +72,11 @@
 |postfix flow control|a if b, c until d|✗|N/A|✓|N/A||
 |inclusive ranges|[a..b]|✗|✓|✓|✓|✓|
 |exclusive ranges|[a...b]|✗|✓|✓|✓|✓|
-|bound function literals|=>|✗|✓|✓|mostly||
+|bound function literals|=>|✗|✓|✓|✓|✓|
 |object key-omission shorthand|{a}|✗|✓|✓|N/A||
 |implicit object literals|a: b|✗|N/A|mostly|N/A||
 |(splat/rest)-params|(a...) ->|✗|✓||||
-|@-params|(@a) ->|✗|✓|✓|||
+|@-params|(@a) ->|✗|✓|✓|✓|✓|
 |named destructuring assignment|{a: b} = c|✗|✓|✓|✓|✓|
 |positional destructuring assignment|[a, b] = c|✗|✓|✓|✓|✓|
 |splat/spread arguments|fn a...|✗|✓||||
@@ -88,7 +88,7 @@
 |try operator|try a|✗|✓||||
 |typeof operator|typeof a|✗|✓|✓|✓||
 |continue lines ending in binary operator|a and <\n> b|✗|N/A|✓|N/A||
-|backslash continues lines|a \ <\n> + b|✗|N/A|✓|||
+|backslash continues lines|a \ <\n> + b|✗|N/A|mostly|||
 |triple-quoted strings|"""<\n>   a<\n>"""|✗|N/A|✓|||
 |heregexen|/// a ///|✗|N/A|✓|✓||
 |ACI in multiline array/object literals|[a<\n>b]|✗|N/A|mostly|||
@@ -97,4 +97,4 @@
 |unbounded splices|a[b...] = c|✗|✓|✓|||
 |javascript literals|`javascript`|✗|||||
 |block comments|### comment ###|✗|||||
-|default parameters|(a = b) ->|✗|||||
+|default parameters|(a = b) ->|✗|✓|✓|✓|✓|
