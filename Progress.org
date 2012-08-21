@@ -9,8 +9,8 @@
 |parentheses for grouping|(a or b) and c|✓|N/A|✓|N/A||
 |logical operators|and/or/not/&&/&#124;&#124;/!|✓|✓|✓|✓||
 |comparison operators|</<=/>/>=/==/!=/is/isnt|✓|✓|✓|✓||
-|member access|a.b|✓|✓|✓|✓||
-|dynamic member access|a[b]|✓|✓|✓|✓||
+|member access|a.b|✓|✓|✓|✓|✓|
+|dynamic member access|a[b]|✓|✓|✓|✓|✓|
 |explicit function application|a(b, c)|✓|✓|✓|✓||
 |indentation introduces blocks|if a <\n> <indent> b|✓|N/A|✓|N/A||
 |`then` introduces block|if a then b|✓|N/A|✓|N/A||
@@ -60,12 +60,12 @@
 |boolean aliases|yes/no/on/off|✗|N/A|✓|N/A|✓|
 |exponential notation|1.2e+4|✗|N/A|✓|N/A||
 |bitwise operators|&/&#124;/^/~/<</>>/>>>|✗|✓|✓|✓||
-|soaked member access|a?.b|✗|✓|✓|✓||
-|dynamic soaked member access|a?[b]|✗|✓|✓|||
+|soaked member access|a?.b|✗|✓|✓|✓|✓|
+|dynamic soaked member access|a?[b]|✗|✓|✓|✓|✓|
 |binary existential operator|a ? b|✗|✓|✓|✓||
 |implicit function application|a b, c|✗|N/A|✓|N/A||
-|proto-member access|a::b|✗|✓|✓|✓||
-|dynamic proto-member access|a::[b]|✗|✓|✓|||
+|proto-member access|a::b|✗|✓|✓|✓|✓|
+|dynamic proto-member access|a::[b]|✗|✓|✓|✓|✓|
 |@ as alias for this|@|✗|N/A|✓|✓||
 |soaked function application|a?(b, c)|✗|✓||||
 |while loop|while a then b|✗|✓|✓|✓||
