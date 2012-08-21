@@ -88,10 +88,10 @@
 |try operator|try a|✗|✓||||
 |typeof operator|typeof a|✗|✓|✓|✓||
 |continue lines ending in binary operator|a and <\n> b|✗|N/A|✓|N/A||
-|backslash continues lines|a \ <\n> + b|✗|N/A|mostly|||
-|triple-quoted strings|"""<\n>   a<\n>"""|✗|N/A|✓|||
-|heregexen|/// a ///|✗|N/A|✓|✓||
-|ACI in multiline array/object literals|[a<\n>b]|✗|N/A|mostly|||
+|backslash continues lines|a \ <\n> + b|✗|N/A|mostly|N/A||
+|triple-quoted strings|"""<\n>   a<\n>"""|✗|N/A|✓|mostly||
+|heregexen|/// a ///|✗|✓|✓|✓||
+|ACI in multiline array/object literals|[a<\n>b]|✗|N/A|mostly|N/A||
 |shallow copy of array|a[..]|✗|✓|✓|||
 |splices|a[b..c] = d|✗|✓|✓|||
 |unbounded splices|a[b...] = c|✗|✓|✓|||
