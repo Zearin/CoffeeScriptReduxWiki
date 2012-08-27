@@ -75,11 +75,11 @@
 |bound function literals|=>|✗|✓|✓|✓|✓|
 |object key-omission shorthand|{a}|✗|✓|✓|N/A||
 |implicit object literals|a: b|✗|N/A|mostly|N/A||
-|(splat/rest)-params|(a...) ->|✗|✓||||
+|(splat/rest)-params|(a...) ->|✗|✓|✓|✓|✓|
 |@-params|(@a) ->|✗|✓|✓|✓|✓|
 |named destructuring assignment|{a: b} = c|✗|✓|✓|✓|✓|
 |positional destructuring assignment|[a, b] = c|✗|✓|✓|✓|✓|
-|splat/spread arguments|fn a...|✗|✓||||
+|splat/spread arguments|fn a...|✗|✓|✓|✓|✓|
 |chained comparison|a < b < c|✗|||||
 |super|super|✗|✓||||
 |super with arguments|super a|✗|✓||||
