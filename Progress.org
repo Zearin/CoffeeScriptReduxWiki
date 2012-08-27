@@ -92,7 +92,7 @@
 |triple-quoted strings|"""<\n>   a<\n>"""|✗|N/A|✓|mostly||
 |heregexen|/// a ///|✗|✓|✓|✓||
 |ACI in multiline array/object literals|[a<\n>b]|✗|N/A|mostly|N/A||
-|shallow copy of array|a[..]|✗|✓|✓|||
+|shallow copy of array|a[..]|✗|✓|✓|✓||
 |splices|a[b..c] = d|✗|✓|✓|||
 |unbounded splices|a[b...] = c|✗|✓|✓|||
 |javascript literals|`javascript`|✗|||||
