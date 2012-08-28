@@ -84,8 +84,8 @@
 |super|super|✗|✓||||
 |super with arguments|super a|✗|✓||||
 |external constructors|class A then constructor: c|✗|N/A|✓|✓|✓|
-|try-catch-finally| |✗|✓||||
-|try operator|try a|✗|✓||||
+|try-catch-finally| |✗|✓|✓|✓||
+|try operator|try a|✗|✓|✓|✓||
 |typeof operator|typeof a|✗|✓|✓|✓||
 |continue lines ending in binary operator|a and <\n> b|✗|N/A|✓|N/A||
 |backslash continues lines|a \ <\n> + b|✗|N/A|mostly|N/A||
