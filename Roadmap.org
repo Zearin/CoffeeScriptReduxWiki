@@ -12,10 +12,10 @@
 |Fri, 10 Aug|Fri, 10 Aug|start writing the transformations from CS ASTs to JS ASTs|
 ||in progress|start pulling in the test suite from jashkenas/coffee-script|
 |Fri, 7 Sep|Wed, 5 Sep|use Mozilla's source map generator to generate source maps|
-|||finish up cscodegen|
-|||self-host|
-|||enhance escodegen to accept a grammar for generating CSTs|
 |||expand the language and include all the features we initially left out|
 |||start using it to compile popular projects; see if they continue to pass their test suites|
 |||pass the current CS compiler's entire test suite|
+|||self-host|
 |||documentation|
+|||finish up cscodegen|
+|||enhance escodegen to accept a grammar for generating CSTs|
