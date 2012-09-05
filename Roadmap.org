@@ -7,13 +7,12 @@
 |Mon, 11 June|Mon, 11 June|choose a parsing strategy and library|
 |Wed, 27 June|Mon, 25 June|define a parser that can parse my subset of CoffeeScript|
 |Thu, 28 June|on hold|a simple code generator for CS ASTs, cscodegen|
-|Fri, 6 July|Fri, 6 July|start writing the optimising transformations|
-|Wed, 11 July|Mon, 9 July|get the optimiser working|
-|Fri, 10 August|Fri, 10 August|start writing the transformations from CS ASTs to JS ASTs|
+|Fri, 6 Jul|Fri, 6 Jul|start writing the optimising transformations|
+|Wed, 11 Jul|Mon, 9 Jul|get the optimiser working|
+|Fri, 10 Aug|Fri, 10 Aug|start writing the transformations from CS ASTs to JS ASTs|
 ||in progress|start pulling in the test suite from jashkenas/coffee-script|
-||in progress|use Mozilla's source map generator to generate source maps|
+|Fri, 7 Sep|Wed, 5 Sep|use Mozilla's source map generator to generate source maps|
 |||finish up cscodegen|
-|||finish writing the transformations from CS ASTs to JS ASTs|
 |||self-host|
 |||enhance escodegen to accept a grammar for generating CSTs|
 |||expand the language and include all the features we initially left out|
