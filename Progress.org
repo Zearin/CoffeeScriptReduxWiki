@@ -95,6 +95,6 @@
 |shallow copy of array|a[..]|✗|✓|✓|✓||
 |splices|a[b..c] = d|✗|✓|✓|||
 |unbounded splices|a[b...] = c|✗|✓|✓|||
-|javascript literals|`javascript`|✗|||||
+|javascript literals|`javascript`|✗|✓|✓|✓||
 |block comments|### comment ###|✗|||||
 |default parameters|(a = b) ->|✗|✓|✓|✓|✓|
