@@ -96,5 +96,5 @@
 |splices|a[b..c] = d|✗|✓|✓|||
 |unbounded splices|a[b...] = c|✗|✓|✓|||
 |javascript literals|`javascript`|✗|✓|✓|✓||
-|block comments|### comment ###|✗|||||
+|block comments|### comment ###|✗||✓|||
 |default parameters|(a = b) ->|✗|✓|✓|✓|✓|
