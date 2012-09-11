@@ -80,7 +80,7 @@
 |named destructuring assignment|{a: b} = c|✗|✓|✓|✓|✓|
 |positional destructuring assignment|[a, b] = c|✗|✓|✓|✓|✓|
 |splat/spread arguments|fn a...|✗|✓|✓|✓|✓|
-|chained comparison|a < b < c|✗|||||
+|chained comparison|a < b < c|✗|✓|✓|✓|✓|
 |super|super|✗|✓||||
 |super with arguments|super a|✗|✓||||
 |external constructors|class A then constructor: c|✗|N/A|✓|✓|✓|
