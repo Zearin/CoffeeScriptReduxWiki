@@ -15,7 +15,7 @@
 |Fri, 14 Sep|in progress|expand the language and include all the features we initially left out|
 |N/A|in progress|start using it to compile popular projects; see if they continue to pass their test suites|
 |Fri, 21 Sep||pass the current CS compiler's entire test suite|
-|Tue, 18 Sep||self-host|
+|Tue, 18 Sep|Mon, 17 Sep|self-host|
 |Fri, 21 Sep||documentation|
 |||finish up cscodegen|
 |||enhance escodegen to accept a grammar for generating CSTs|
