@@ -1,5 +1,5 @@
-| production|what it is|alternative|
-|:---------:|:--------:|:---------:|
+| production|what it is                 |alternative|
+|:---------:|:-------------------------:|:---------:|
 |`(a) ->`   |`function with 1 parameter`|`a(->)`    |
 |`a /b/i`   |`a(/b/i)`                  |`a/(b/i)`  |
 |`a /= b/i` |`a = a / (b / i)`          |`a(/= b/i)`|
