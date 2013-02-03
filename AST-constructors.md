@@ -1,153 +1,153 @@
-@ Statements
-  * Continue
-  * Break
-  * Throw
-  * Return
-  * Exprs
+## Statements
+ - [x] Continue
+ - [x] Break
+ - [x] Throw
+ - [x] Return
+ - [x] Exprs
 
-@ Exprs
-  * Numbers
-  * String
-  * Undefined
-  * Null
-  * Bool
-  * ContextMember
-  * UnaryOps
-  * Slices
-  * BinOps
-  * FunctionApplication
-  * SoakedFunctionApplication
-  * Function
-  * BoundFunction
-  * Conditional
-  * While
-  * InclusiveRange
-  * ExclusiveRange
-  * Switch
-  * Regexp
-  * Super
-  * ArrayInitialiser
-  * ObjectInitialiser
-  * Class
-  * Try
-  * JavaScript
-  * ForIn
-  * ForOf
-  * Identifier
+## Exprs
+ - [x] Numbers
+ - [x] String
+ - [x] Undefined
+ - [x] Null
+ - [x] Bool
+ - [x] ContextMember
+ - [x] UnaryOps
+ - [x] Slices
+ - [x] BinOps
+ - [x] FunctionApplication
+ - [x] SoakedFunctionApplication
+ - [x] Function
+ - [x] BoundFunction
+ - [x] Conditional
+ - [x] While
+ - [x] InclusiveRange
+ - [x] ExclusiveRange
+ - [x] Switch
+ - [x] Regexp
+ - [x] Super
+ - [x] ArrayInitialiser
+ - [x] ObjectInitialiser
+ - [x] Class
+ - [x] Try
+ - [x] JavaScript
+ - [x] ForIn
+ - [x] ForOf
+ - [x] Identifier
 
-@ Numbers
-  * Int
-  * Float
+## Numbers
+ - [x] Int
+ - [x] Float
 
-@ UnaryOps
-  * UnaryPlusOp
-  * UnaryNegateOp
-  * NotOp
-  * BitNotOp
-  * UnaryExistsOp
-  * DoOp
-  * NewOp
-  * TypeofOp
-  * PreIncrementOp
-  * PreDecrementOp
-  * PostIncrementOp
-  * PostDecrementOp
-  * ShallowCopyArray
+## UnaryOps
+ - [x] UnaryPlusOp
+ - [x] UnaryNegateOp
+ - [x] NotOp
+ - [x] BitNotOp
+ - [x] UnaryExistsOp
+ - [x] DoOp
+ - [x] NewOp
+ - [x] TypeofOp
+ - [x] PreIncrementOp
+ - [x] PreDecrementOp
+ - [x] PostIncrementOp
+ - [x] PostDecrementOp
+ - [x] ShallowCopyArray
 
-@ Slices
-  * InclusiveSlice
-  * ExclusiveSlice
-  * UnboundedLeftSlice
-  * UnboundedRightSlice
+## Slices
+ - [x] InclusiveSlice
+ - [x] ExclusiveSlice
+ - [x] UnboundedLeftSlice
+ - [x] UnboundedRightSlice
 
-@ BinOps
-  * ConcatOp
-  * LogicOps
-  * BitOps
-  * MathsOps
-  * ExistsOp
-  * ComparisonOps
-  * InOp
-  * OfOp
-  * InstanceofOp
-  * SeqOp
-  * ExtendsOp
-  * MemberAccessOps
-  * AssignOps
+## BinOps
+ - [x] ConcatOp
+ - [x] LogicOps
+ - [x] BitOps
+ - [x] MathsOps
+ - [x] ExistsOp
+ - [x] ComparisonOps
+ - [x] InOp
+ - [x] OfOp
+ - [x] InstanceofOp
+ - [x] SeqOp
+ - [x] ExtendsOp
+ - [x] MemberAccessOps
+ - [x] AssignOps
 
-@ LogicOps
-  * AndOp
-  * OrOp
+## LogicOps
+ - [x] AndOp
+ - [x] OrOp
 
-@ BitOps
-  * BitAndOp
-  * BitOrOp
-  * BitXorOp
-  * LeftShiftOp
-  * SignedRightShiftOp
-  * UnsignedRightShiftOp
+## BitOps
+ - [x] BitAndOp
+ - [x] BitOrOp
+ - [x] BitXorOp
+ - [x] LeftShiftOp
+ - [x] SignedRightShiftOp
+ - [x] UnsignedRightShiftOp
 
-@ MathsOps
-  * AddOp
-  * SubtractOp
-  * MultiplyOp
-  * DivideOp
-  * RemOp
+## MathsOps
+ - [x] AddOp
+ - [x] SubtractOp
+ - [x] MultiplyOp
+ - [x] DivideOp
+ - [x] RemOp
 
-@ ComparisonOps
-  * LTOp
-  * LTEOp
-  * GTOp
-  * GTEOp
-  * EQOp
-  * NEQOp
+## ComparisonOps
+ - [x] LTOp
+ - [x] LTEOp
+ - [x] GTOp
+ - [x] GTEOp
+ - [x] EQOp
+ - [x] NEQOp
 
-@ MemberAccessOps
-  * MemberAccessOp
-  * SoakedMemberAccessOp
-  * DynamicMemberAccessOp
-  * SoakedDynamicMemberAccessOp
-  * ProtoMemberAccessOp
-  * DynamicProtoMemberAccessOp
-  * SoakedProtoMemberAccessOp
-  * SoakedDynamicProtoMemberAccessOp
+## MemberAccessOps
+ - [x] MemberAccessOp
+ - [x] SoakedMemberAccessOp
+ - [x] DynamicMemberAccessOp
+ - [x] SoakedDynamicMemberAccessOp
+ - [x] ProtoMemberAccessOp
+ - [x] DynamicProtoMemberAccessOp
+ - [x] SoakedProtoMemberAccessOp
+ - [x] SoakedDynamicProtoMemberAccessOp
 
-@ AssignOps
-  * AssignOp
-  * ExistsAssignOp
-  * Splice
-  * ClassProtoAssignOp
-  * CompoundAssignOp
+## AssignOps
+ - [x] AssignOp
+ - [x] ExistsAssignOp
+ - [x] Splice
+ - [x] ClassProtoAssignOp
+ - [x] CompoundAssignOp
 
-@ CompoundAssignableOps
-  * MathsOps
-  * BitOps
-  * LogicOps
-  * ExistsOp
+## CompoundAssignableOps
+ - [x] MathsOps
+ - [x] BitOps
+ - [x] LogicOps
+ - [x] ExistsOp
 
-@ ArrayInitialiserMembers
-  * Exprs
-  * Spread
+## ArrayInitialiserMembers
+ - [x] Exprs
+ - [x] Spread
 
-@ ObjectInitialiserKeys
-  * IdentifierName
-  * String
-  * Numbers
+## ObjectInitialiserKeys
+ - [x] IdentifierName
+ - [x] String
+ - [x] Numbers
 
-@ Arguments
-  * Exprs
-  * Spread
+## Arguments
+ - [x] Exprs
+ - [x] Spread
 
-@ Parameters
-  * Assignables
-  * AssignOp
-  * Rest
+## Parameters
+ - [x] Assignables
+ - [x] AssignOp
+ - [x] Rest
 
-@ Assignables
-  * Identifier
-  * MemberAccessOps
-  * PositionalDestructuring # TODO
-  * NamedDestructuring # TODO
+## Assignables
+ - [x] Identifier
+ - [x] MemberAccessOps
+ - [ ] PositionalDestructuring # TODO
+ - [ ] NamedDestructuring # TODO
 
-@ MemberNames
-  * IdentifierName
+## MemberNames
+ - [x] IdentifierName
